@@ -162,7 +162,7 @@ export default function PollsPage() {
                   <span>{poll.reactions.trending}</span>
                 </button>
                 <div className="ml-auto text-sm text-gray-500 dark:text-gray-400">
-                  Created by: {poll.createdBy}
+                  Created by: {poll.isAnonymous ? "Anonymous" : poll.createdBy}
                 </div>
               </div>
             </div>
